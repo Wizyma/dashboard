@@ -1,0 +1,25 @@
+{
+  "name": "@dashboard/board-api",
+  "private": true,
+  "version": "1.0.0",
+  "module": "./dist/index.es.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build && yarn postbuild",
+    "postbuild": "tsc --emitDeclarationOnly",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "4.8.3",
+    "vite": "3.1.8"
+  }
+}

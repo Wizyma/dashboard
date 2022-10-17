@@ -1,0 +1,41 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "workspaces": [
+    "applications/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build:all": "FORCE_COLOR=true yarn workspaces foreach -pv --topological-dev --exclude getjust run build",
+    "build": "FORCE_COLOR=true yarn workspaces foreach -Rpv --topological-dev --from $0 run build",
+    "commit": "git-cz",
+    "dev:all": "FORCE_COLOR=true yarn workspaces foreach -pv --topological-dev --exclude getjust run dev",
+    "dev": "FORCE_COLOR=true yarn workspaces foreach -Rpvi --topological-dev --from $0 run dev",
+    "lint:all": "FORCE_COLOR=true yarn workspaces foreach -pv --exclude getjust run lint",
+    "lint": "FORCE_COLOR=true yarn workspaces foreach -Rpv --topological-dev --from $0 run lint",
+    "test:all": "FORCE_COLOR=true yarn workspaces foreach -pv --exclude getjust run test",
+    "test": "FORCE_COLOR=true yarn workspaces foreach -Rpv --topological-dev --from $0 run test",
+    "w": "yarn workspace"
+  },
+  "author": "André Gomes",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "yarn@3.2.4",
+  "devDependencies": {
+    "@types/eslint": "^8",
+    "@types/node": "16.11.59",
+    "@types/prettier": "^2",
+    "@typescript-eslint/eslint-plugin": "5.40.0",
+    "@typescript-eslint/parser": "5.40.0",
+    "commitizen": "4.2.5",
+    "eslint": "8.25.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "git-cz": "4.9.0",
+    "prettier": "2.7.1",
+    "typescript": "4.8.3"
+  }
+}

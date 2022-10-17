@@ -1,0 +1,1 @@
+export const GET_DOCUMENT_QUERY_KEY = "QUERY/DOCUMENTS";
