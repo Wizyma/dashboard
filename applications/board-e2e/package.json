@@ -1,0 +1,14 @@
+{
+  "name": "@dashboard/board-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "author": "André Gomes",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "1.27.1"
+  }
+}
