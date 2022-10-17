@@ -35,7 +35,11 @@ export const Layout: React.FC<LayoutProps> = ({
         position="fixed"
         sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
       >
-        {headerContent ? <Toolbar>{headerContent}</Toolbar> : <Toolbar />}
+        {headerContent ? (
+          <Toolbar id="board-layout-toolbar">{headerContent}</Toolbar>
+        ) : (
+          <Toolbar />
+        )}
       </AppBar>
       <Drawer
         variant="permanent"

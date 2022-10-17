@@ -1802,6 +1802,7 @@ __metadata:
     ag-grid-community: 28.2.0
     ag-grid-react: 28.2.0
     jotai: 1.8.5
+    json-to-csv-export: 2.0.2
     react: 18.2.0
     react-dom: 18.2.0
     react-router-dom: 6.4.2
@@ -11914,6 +11915,13 @@ __metadata:
   version: 1.0.1
   resolution: "json-stable-stringify-without-jsonify@npm:1.0.1"
   checksum: cff44156ddce9c67c44386ad5cddf91925fe06b1d217f2da9c4910d01f358c6e3989c4d5a02683c7a5667f9727ff05831f7aa8ae66c8ff691c556f0884d49215
+  languageName: node
+  linkType: hard
+
+"json-to-csv-export@npm:2.0.2":
+  version: 2.0.2
+  resolution: "json-to-csv-export@npm:2.0.2"
+  checksum: b2a505d9398ab532ed409e371a68b211d98d874e65998755ed588983eab5ff30a0c7707d43f1a58e903ba3927ffec3285b58fdb725b9c0773d60d6a40f52c142
   languageName: node
   linkType: hard
 
